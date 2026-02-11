@@ -7,7 +7,7 @@
 }
 :root {
   --primary-color: #8e0101;
-  ---color: #b71414;
+  --secondary-color: #b71515;
 
   --background-primary-color: #ffffff;
   --background-secondary-color: #f5f5f5;
@@ -54,4 +54,38 @@ h1 {
 
 body {
   font-family: "Monserrat";
+  color: var(--text-primary-color);
+}
+
+.section-title h2 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin: 0;
+  text-align: center;
+}
+
+.section-title hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 16px auto 32px;
+}
+
+@media screen and (min-width:768px){
+  .section-title h2 {
+  font-size: 32px;
+  font-weight: var(--title-weight);
+  margin: 0;
+  text-align: center;
+}
+}
+
+@media screen and (min-width:1024px){
+  .section-title h2 {
+  font-size: 32px;
+  font-weight: var(--title-weight);
+  margin: 0;
+  text-align: center;
+}
 }
